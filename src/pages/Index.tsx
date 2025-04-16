@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 import { 
   Scale, 
   Globe2, 
-  MicrosoftTeams,
-  VolumeUp,
+  Users,
+  Volume2,
   BookOpen,
   Shield,
   Award
@@ -28,7 +28,7 @@ const HomePage = () => {
       description: "Get legal information in multiple Indian languages, breaking down language barriers."
     },
     {
-      icon: <VolumeUp size={24} />,
+      icon: <Volume2 size={24} />,
       title: "Voice Interface",
       description: "Ask questions using voice and listen to responses, making it accessible to everyone."
     },
@@ -95,7 +95,7 @@ const HomePage = () => {
               <div className="bg-neutral p-6 rounded-lg border border-gray-100 shadow-sm">
                 <div className="flex items-center mb-4">
                   <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center text-primary mr-4">
-                    <MicrosoftTeams size={20} />
+                    <Users size={20} />
                   </div>
                   <h3 className="font-semibold text-lg">Our Impact</h3>
                 </div>
