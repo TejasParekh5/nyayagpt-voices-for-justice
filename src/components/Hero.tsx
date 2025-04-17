@@ -1,14 +1,11 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import heroImage from '../assets/hero-image.svg';
-
 interface HeroProps {
   language?: string;
 }
-
 const Hero = ({
   language = 'en'
 }: HeroProps) => {
@@ -26,14 +23,12 @@ const Hero = ({
       ctaSecondary: "और जानें"
     }
   };
-
   const {
     tagline,
     description,
     ctaPrimary,
     ctaSecondary
   } = content[language as keyof typeof content] || content.en;
-
   return <section className="hero-gradient text-white">
       <div className="container-custom min-h-[80vh] flex flex-col md:flex-row items-center justify-between py-16">
         <div className="md:w-1/2 mb-10 md:mb-0">
@@ -54,12 +49,7 @@ const Hero = ({
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              asChild 
-              className="border-white text-white hover:bg-white/20 hover:border-white/80 transition-all duration-300 group"
-            >
+            <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/20 hover:border-white/80 transition-all duration-300 group">
               <Link to="/about" className="flex items-center group-hover:tracking-wider transition-all duration-300">
                 {ctaSecondary}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -70,10 +60,9 @@ const Hero = ({
         <div className="md:w-1/2 flex justify-center animate-fade-in" style={{
         animationDelay: '0.5s'
       }}>
-          <img src={heroImage} alt="Justice and technology illustration" className="w-full max-w-lg" />
+          <img src={heroImage} alt="Justice and technology illustration" className="change the image " />
         </div>
       </div>
     </section>;
 };
-
 export default Hero;
